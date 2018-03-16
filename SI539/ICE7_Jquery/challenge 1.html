@@ -2,23 +2,17 @@
 <html lang="en">
   <head>
     <title>JavaScript Challenges</title>
-
+      /*    YOUR jQuery CODE HERE */
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-
 
     <script>
     $(document).ready(function(){
-      /*    YOUR jQuery CODE HERE */
-          $('#emailfield').hide();
+      $("#emailfield").hide();
+      $("#subscribe").click(function(){
+       $("#emailfield").toggle();
 
-          $('#subscribe').click(function(){
-            $('#emailfield').toggle();
-
-          });
-
-      });
-
+    });
+  })
     </script>
   </head>
   <body>
