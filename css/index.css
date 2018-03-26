@@ -1,0 +1,100 @@
+body h1{
+  display: inline-block;
+  text-align: center;
+  font-weight:bold;
+}
+.row{
+  display: inline-block;
+  background: linear-gradient(to right,#AFDFE4,#5686BF);
+}
+
+#aboutme{
+  background-color:#d3d4cc;
+  /* border-style: dotted; */
+  display:block;
+  text-align: center;
+}
+#resume{
+  background-color:#f8ebdb;
+  display:block;
+  text-align: center;
+}
+#graphic{
+  background-color:#ead0d1;
+  /* border-style: dotted; */
+  display:block;
+  text-align: center;
+}
+
+body nav{
+  padding:0;
+  margin:0;
+}
+header.container{
+  align-items: center;
+  margin:0;
+  padding:0;
+}
+
+section.jumbotron{
+  color:white;
+  background-color: #a27e7e;
+}
+
+#contact{
+  font-weight: bold;
+}
+
+footer{
+  padding:0 20px 0 20px;
+  background: linear-gradient(to right,#AFDFE4,#5686BF);
+  /* display:flex;
+  justify-content:center; */
+
+}
+
+.msg p{
+  font-weight: bold;
+}
+
+@media (min-width: 576px) and (max-width: 1200px) {
+  .jumbotron{
+    background: url('image/welcome.jpg') no-repeat center;
+    background-size:  auto;
+  }
+  #aboutme{
+    background-color:#d3d4cc;
+    /* border-style: dotted; */
+    display:inline-block;
+    text-align: center;
+  }
+  #resume{
+    background-color:#f8ebdb;
+    display:inline-block;
+    text-align: center;
+  }
+  #graphic{
+    background-color:#ead0d1;
+    /* border-style: dotted; */
+    display:inline-block;
+    text-align: center;
+  }
+   }
+@media (min-width: 1200px) {
+  body nav{
+    background-size: cover;
+
+  }
+  .jumbotron{
+  background: url('image/welcome.jpg') no-repeat center;
+  background-size:auto;
+}
+#leftfooter{
+  display:inline-block;
+  /* width:50%; */
+}
+/* footer form{
+  display:inline-block;
+
+} */
+}
