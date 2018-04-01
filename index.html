@@ -13,7 +13,7 @@ nav -->
       <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
 
       <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
-      <link rel='stylesheet' type='text/css' href='/css/style.css'>
+      <link rel='stylesheet' type='text/css' href='css/style.css'>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
 
@@ -23,14 +23,14 @@ nav -->
       <header class="container">
 
       <div class='row'>
-      <img class="col-sm-4" src='image/logo.svg' alt="logo">
+      <img class="col-sm-4 col-md-6" src='image/logo.svg' alt="logo">
       <h1 class="col-sm-8"> Fanpan Zeng </h1>
     </div>
 
-      <nav  >
-          <div id='aboutme' ref=#> About Me </div>
-          <div id='resume' ref=#> Resume  </div>
-          <div id="graphic" ref=#> Graphic Design </div>
+      <nav class="navbar">
+          <div class="col-sm-12 col-md-4" id='aboutme' ref=#> About Me </div>
+          <div class="col-sm-12 col-md-4" id='resume' ref=#> Resume  </div>
+          <div class="col-sm-12 col-md-4" id="graphic" ref=#> Graphic Design </div>
         </nav>
        </header>
           <!-- <video width height controls >
@@ -67,28 +67,56 @@ nav -->
 
 <footer>
   <!-- The footer must be nicely styled and interesting.   I would expect a minimum of 6 properties styled. -->
-  <div class='leftfooter'>
-
+  <div class='row'>
+    <div class="col-sm-12 col-md-6" >
     <p id='contact'> Contact me</p>
     <img src="image/phone.svg" alt='Phone' style="width:30px;height:30px;">
     <img src="image/email.svg" alt='Email' style="width:30px;height:30px;">
     <img src="image/linkedin.svg" alt='Linkedin' style="width:30px;height:30px;">
     <img src="image/facebook.svg"alt='facebook' style="width:30px;height:30px;">
     <img src='image/instagram.svg' alt='ins' style="width:30px;height:30px;"><br><br>
-  </div>
+   </div>
 
-    <form class='msg'>
-      <form action="mailto:someone@example.com" method="post" enctype="text/plain">
-      <p>Leave message:  </p>
-      <input type="text" name="comment" size="50">
-      <input type="submit" value="Send">
-      </form>
+   <div class="msg col-sm-12 col-md-6" >
+   <form action="mailto:zfp@umich.com" method="post" enctype="text/plain">
+     <p>Leave message:  </p>
+     <input type="text" name="comment" size="50">
+     <input type="submit" value="Send">
+
+     </form>
+    </div>
 
     <p> This site is created by Fanpan Zeng &copy;2018 ZFP</p>
 
 
 
 </footer>
+
+<div class="row">
+  <div class="col-md-6">
+    <form class="" action="index.html" method="post">
+
+    </form>
+  </div>
+  <!-- <div class="col-md-6">
+    <img src="" alt="">
+    <img src="" alt="">
+    <img src="" alt="">
+    <img src="" alt="">
+    <img src="" alt="">
+    <img src="" alt="">
+  </div> -->
+  <!-- <div class="col-md-1">
+    <img src="" alt="">
+  </div>
+  <div class="col-md-1">
+    <img src="" alt="">
+  </div>
+  <div class="col-md-1">
+    <img src="" alt="">
+  </div> -->
+
+</div>
 
     </body>
 </html>
