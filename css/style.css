@@ -6,39 +6,42 @@ body h1{
 .row{
   display: inline-block;
   background: linear-gradient(to right,#AFDFE4,#5686BF);
+  width:100vw;
 }
 
 #aboutme{
   background-color:#d3d4cc;
-  /* border-style: dotted; */
-  display:block;
   text-align: center;
+  /* border-style: dotted; */
 }
 #resume{
   background-color:#f8ebdb;
-  display:block;
   text-align: center;
 }
 #graphic{
   background-color:#ead0d1;
-  /* border-style: dotted; */
-  display:block;
   text-align: center;
+  /* border-style: dotted; */
 }
 
-body nav{
+nav.navbar{
   padding:0;
   margin:0;
+  width:100vw;
+
 }
 header.container{
   align-items: center;
   margin:0;
   padding:0;
+  width:100vw;
+
 }
 
 section.jumbotron{
   color:white;
   background-color: #a27e7e;
+  height:auto;
 }
 
 #contact{
@@ -57,29 +60,28 @@ footer{
   font-weight: bold;
 }
 
-@media (min-width: 576px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   .jumbotron{
     background: url('image/welcome.jpg') no-repeat center;
     background-size:  auto;
   }
-  #aboutme{
+  /* #aboutme{
     background-color:#d3d4cc;
     /* border-style: dotted; */
-    display:inline-block;
+    /* display:inline-block;
     text-align: center;
   }
   #resume{
     background-color:#f8ebdb;
     display:inline-block;
     text-align: center;
-  }
-  #graphic{
+  } */
+  /* #graphic{
     background-color:#ead0d1;
     /* border-style: dotted; */
-    display:inline-block;
-    text-align: center;
-  }
-   }
+    /* text-align: center;
+  } */
+
 @media (min-width: 1200px) {
   body nav{
     background-size: cover;
@@ -89,8 +91,7 @@ footer{
   background: url('image/welcome.jpg') no-repeat center;
   background-size:auto;
 }
-#leftfooter{
-  display:inline-block;
+
   /* width:50%; */
 }
 /* footer form{
