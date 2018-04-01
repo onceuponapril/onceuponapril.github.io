@@ -1,30 +1,40 @@
-body h1{
-  display: inline-block;
-  text-align: center;
+body #name p{
+  text-align:center;
   font-weight:bold;
+  font-size:300%;
 }
 .row{
   display: inline-block;
-  background: linear-gradient(to right,#AFDFE4,#5686BF);
+  background: linear-gradient(to right,#ead0d1,#5686BF);
   width:100vw;
 }
-
+/* #name{
+  display:grid;
+  grid-template-columns:repeat(6,1fr);
+}
+#name.h1{
+  grid-column:2/span 4;
+} */
 #aboutme{
-  background-color:#d3d4cc;
   text-align: center;
   /* border-style: dotted; */
+  border-top:ridge;
+  border-bottom:ridge;
 }
 #resume{
-  background-color:#f8ebdb;
   text-align: center;
+  border-top:ridge;
+  border-bottom:ridge;
 }
 #graphic{
-  background-color:#ead0d1;
   text-align: center;
+  border-top:ridge;
+  border-bottom:ridge;
   /* border-style: dotted; */
 }
 
 nav.navbar{
+  background-size: 40%;
   padding:0;
   margin:0;
   width:100vw;
@@ -38,7 +48,8 @@ header.container{
 
 }
 
-section.jumbotron{
+section.welcome{
+  margin-top: 10px;
   color:white;
   background-color: #a27e7e;
   height:auto;
@@ -50,7 +61,7 @@ section.jumbotron{
 
 footer{
   padding:0 20px 0 20px;
-  background: linear-gradient(to right,#AFDFE4,#5686BF);
+    /* background: linear-gradient(to right,#AFDFE4,#5686BF); */
   /* display:flex;
   justify-content:center; */
 
@@ -59,43 +70,70 @@ footer{
 .msg p{
   font-weight: bold;
 }
+.project{
+  text-align: center;
+}
 
 @media (min-width: 768px) and (max-width: 1200px) {
-  .jumbotron{
-    background: url('image/welcome.jpg') no-repeat center;
-    background-size:  auto;
+
+
+
+    /* body nav{
+      background-size: cover;} */
+    #aboutme{
+      border-color: none;
+    }
+    #resume{
+      border-style: none;
+    }
+    #graphic{
+      border-style: none;
+    }
+    .logo{
+      display:flex;
+      align-items:center;
+      }
+
+   .project{
+     display:flex;
   }
-  /* #aboutme{
-    background-color:#d3d4cc;
-    /* border-style: dotted; */
-    /* display:inline-block;
-    text-align: center;
-  }
-  #resume{
-    background-color:#f8ebdb;
-    display:inline-block;
-    text-align: center;
-  } */
-  /* #graphic{
-    background-color:#ead0d1;
-    /* border-style: dotted; */
-    /* text-align: center;
-  } */
+}
 
 @media (min-width: 1200px) {
-  body nav{
-    background-size: cover;
+    body nav{
+      background-size: cover;
+    }
+    #aboutme{
+      border-style: none;
+    }
+    #resume{
+      border-style: none;
+    }
+    #graphic{
+      border-style: none;
+    }
 
+  .logo{
+    display:none;
+    }
+  section.welcome{
+     background-image: url('image/p1.png');
+      margin-top: 10px;
+      background-color: white;
+      color:#a27e7e;
+      height:auto;
+    }
+
+  .project{
+    display:flex;
   }
-  .jumbotron{
-  background: url('image/welcome.jpg') no-repeat center;
-  background-size:auto;
-}
+  footer{
+    position:fixed;
+  }
+    /* width:50%; */
+  /* }
+  /* footer form{
+    display:inline-block;
 
-  /* width:50%; */
-}
-/* footer form{
-  display:inline-block;
-
-} */
+  } */
 }
