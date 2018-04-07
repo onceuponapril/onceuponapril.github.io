@@ -102,39 +102,6 @@ div.menu{
 .container{
   margin:0px;
 }
-/* #name{
-  display:grid;
-  grid-template-columns:repeat(6,1fr);
-}
-#name.h1{
-  grid-column:2/span 4;
-} */
-/* #home{
-  text-align: center;
-  border-top:ridge;
-  border-bottom:ridge;
-  font-size: 1.5rem;
-  }
-#aboutme{
-  text-align: center;
-  border-top:ridge;
-  border-bottom:ridge;
-  font-size: 1.5rem;
-  /* font-weight: bold; */
-}
-/* #resume{
-  text-align: center;
-  border-top:ridge;
-  border-bottom:ridge;
-  font-size: 1.5rem;
-  /* font-weight: bold; */
-}
-/* #graphic{
-  text-align: center;
-  border-top:ridge;
-  border-bottom:ridge;
-  font-size: 1.5rem;
-/* font-weight: bold; */
 
 
 
@@ -162,6 +129,7 @@ section.graphic{
   padding:20px;
   width:100vw;
 }
+
 
 
 img.d-block{
@@ -204,13 +172,21 @@ img.d-block{
   text-align: center;
 }
 
-@media (max-width: 768px) {
+#comment{
+  width: 80%;
+
+}
+@media (max-width: 767px) {
   .wrapper{
     display: none;
   }
   img.bigprofile{
     display:none;
   }
+  .grahic h2{
+    size:50%;
+   }
+
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -222,8 +198,9 @@ img.d-block{
    .project{
      display:flex;
   }
-}
 
+
+}
 @media (min-width: 1200px) {
 
 
