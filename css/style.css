@@ -172,10 +172,10 @@ img.d-block{
 }
 
 #comment{
-  width: 80%;
+  width: 90%;
 
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .wrapper{
     display: none;
   }
