@@ -1,11 +1,7 @@
-<!-- #must have
-header
-footer
-nav -->
-<!DOCTYPE html>
-<html>
 
-<!-- <html lang = en> -->
+<!DOCTYPE html>
+<html lang=en>
+
     <head>
       <title>Fanpanzeng</title>
     	<meta charset="utf-8">
@@ -15,74 +11,99 @@ nav -->
       <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
 
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
-     <link rel='stylesheet' type='text/css' href='css/style.css'>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+      <link rel='stylesheet' type='text/css' href='css/style.css'>
+
+      <script>
+          $(document).ready(function(){
+            $('.navbar').hide();
+                $('.menu').click(function(){
+                  $('.navbar').toggle();
+
+                });
+            });
+      </script>
+
     </head>
 
     <body>
+
+
       <header class="container">
 
       <div class='row' id="name">
-        <img class="col-sm-12 col-md-4 logo"src='image/p1.png' alt="logo" style="width:50%;height:100%">
-        <p class="col-sm-12 col-md-8"> Fanpan Zeng </p>
+        <img class="col-sm-12 col-md-2 logo" src='image/p1.png' alt="logo" style="width:50%;height:100%">
+        <p class="col-sm-12 col-md-12"> Fanpan Zeng </p>
     </div>
 
-<!-- <menu>menu</menu> -->
-
-      <nav class="navbar">
-          <div class="col-sm-12 col-md-4" id='aboutme' ref=#> About Me </div>
-          <div class="col-sm-12 col-md-4" id='resume' ref=#> Resume  </div>
-          <div class="col-sm-12 col-md-4" id="graphic" ref=#> Graphic Design </div>
+<div class='menu'>
+  <img src="image/nmenu.png" alt="menu" >
+</div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link active">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link" href="aboutme.html">About Me</a>
+              <a class="nav-item nav-link" href="resume.html">Resume</a>
+              <a class="nav-item nav-link" href="graphic.html"> Graphic Design</a>
+            </div>
+          </div>
         </nav>
        </header>
-          <!-- <video width height controls >
-            <source src=>
-          </video> -->
-        <section class="welcome">
-        <h2>Hey, I am Fanpan Zeng! Welcome to check it out!</h2>
-      </section>
 
+        <section class="wrapper">
+        <h2>Hey, I am Fanpan Zeng! Welcome to check it out!</h2>
+       </section>
+
+<div class='profile'>
+       <img class="bigprofile" src='image/p1.png' alt="logo" style="width:50%;height:100%">
+</div>
 
         <section class="project">
             <div class="col-sm-12 col-md-4">
-                <!-- <div class="row text-center">
-            <h2>Homemade Goods</h2>
-              <h3>This Year's Best</h3>
-              <a class="btn btn-primary" href="#" role="button">See all</a>
-            </div> -->
-            <img src='image/index1.png' width=100%>
-    				<a href='https://www.fanpanzeng.com/#/silver-surfer/' > >>Interaction Design</a>
-          </div>
+    				<a href='https://www.fanpanzeng.com/#/silver-surfer/' >
+            <img src='image/index1.png' alt="index1" style="width:100%">Interaction Design
+           </a>
+          </div><br>
+
 
           <div class="col-sm-12 col-md-4">
-
-          <img src='image/index2.png' width=100%>
-          <a href='https://www.fanpanzeng.com/#/foodbank/'> >>User experience Research</a>
-        </div>
+          <a href='https://www.fanpanzeng.com/#/foodbank/'>
+            <img src='image/index2.png' alt="index2" style="width:100%">User experience Research
+          </a>
+        </div><br>
 
         <div class="col-sm-12 col-md-4">
-        <img src="image/index3.png" width=100%>
-        <a href='https://www.fanpanzeng.com/#/professional-experience-as-an-user-researcher/'> >>User Researcher Case Study</a>
-        </div>
+
+        <a href='https://www.fanpanzeng.com/#/professional-experience-as-an-user-researcher/'>
+          <img src="image/index3.png" alt="index3" style="width:100%">User Researcher Case Study
+          </a>
+        </div><br>
 
         </section>
 
 
 <footer>
-  <!-- The footer must be nicely styled and interesting.   I would expect a minimum of 6 properties styled. -->
   <div class='row'>
     <div class="col-sm-12 col-md-6" >
     <p id='contact'> Contact me</p>
-    <img src="image/phone.svg" alt='Phone' style="width:30px;height:30px;">
-    <img src="image/email.svg" alt='Email' style="width:30px;height:30px;">
-    <img src="image/linkedin.svg" alt='Linkedin' style="width:30px;height:30px;">
-    <img src="image/facebook.svg"alt='facebook' style="width:30px;height:30px;">
-    <img src='image/instagram.svg' alt='ins' style="width:30px;height:30px;"><br><br>
+    <img class="phone" src="image/phone.svg" alt='Phone' >
+    <img class="email" src="image/email.svg" alt='Email'>
+    <img class="link" src="image/linkedin.svg" alt='Linkedin' >
+    <img class="fb" src="image/facebook.svg" alt='facebook' >
+    <img class="ins" src='image/instagram.svg' alt='ins'><br><br>
    </div>
 
    <div class="msg col-sm-12 col-md-6" >
    <form action="mailto:zfp@umich.com" method="post" enctype="text/plain">
-     <p>Leave message:  </p>
+     <p>Leave message  </p>
      <input type="text" name="comment" size="50">
      <input type="submit" value="Send">
 
@@ -93,34 +114,9 @@ nav -->
     <p> This site is created by Fanpan Zeng &copy;2018 ZFP</p>
 
 
-
+</div>
 </footer>
 
-<div class="row">
-  <div class="col-md-6">
-    <form class="" action="index.html" method="post">
-
-    </form>
-  </div>
-  <!-- <div class="col-md-6">
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-  </div> -->
-  <!-- <div class="col-md-1">
-    <img src="" alt="">
-  </div>
-  <div class="col-md-1">
-    <img src="" alt="">
-  </div>
-  <div class="col-md-1">
-    <img src="" alt="">
-  </div> -->
-
-</div>
 
     </body>
 </html>

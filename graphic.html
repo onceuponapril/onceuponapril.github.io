@@ -1,70 +1,148 @@
-<!DOCTYPE html>
-<html>
 
-<!-- <html lang = en> -->
+<!DOCTYPE html>
+
+  <html lang=en>
     <head>
-      <title>ZFP_Graphic_Design</title>
+      <title>Graphic_Garden</title>
     	<meta charset="utf-8">
       <!--<meta http-equiv="refresh" content="1"-->
       <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
 
       <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
-      <link rel='stylesheet' type='text/css' href='css/style.css'>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    </head>
+      <link rel='stylesheet' type='text/css' href='css/style.css'>
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+      <script>
+          $(document).ready(function(){
+            $('.navbar').hide();
+                $('.menu').click(function(){
+                  $('.navbar').toggle();
+
+
+                });
+            });
+        $('.carousel').carousel(function(){
+          interval: 1000
+          // pause:false
+      });
+
+      </script>
 
     <body>
+
+
       <header class="container">
 
-      <div class='row'>
-      <!-- <img class="col-sm-4 col-md-6" src='image/profile.png' height=100px width=100px" alt="profile"> -->
-      <h1 class="logoname col-sm-8"> Fanpan Zeng </h1>
-      <h2 class="col-sm-8"> My graphic fantasy </h2>
-    </div>
+      <div class='row ' id="name">
+        <img class="col-sm-12 col-md-2 logo" src='image/p1.png' alt="logo" style="width:50%;height:100%">
+        <p class="col-sm-12 col-md-12"> Fanpan Zeng </p>
+      </div>
 
-    <nav class="navbar">
-        <div class="col-sm-12 col-md-4 Home" ref=#> home </div>
-        <div class="col-sm-12 col-md-4 About me" ref=#> about me </div>
-        <div class="col-sm-12 col-md-4 Case Study" ref=#> case study </div>
-      </nav>
+<!-- <menu>menu</menu> -->
+     <div class='menu'>
+       <img src="image/nmenu.png" alt="menu" style="width:10%;height:auto">
+     </div>
 
-  </header>
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+         <div class="navbar-nav">
+           <a class="nav-item nav-link" href="index.html">Home </a>
+           <a class="nav-item nav-link" href="aboutme.html">About Me</a>
+           <a class="nav-item nav-link" href="resume.html">Resume</a>
+           <a class="nav-item nav-link  active" href="graphic.html"> Graphic Design<span class="sr-only">(current)</span></a>
+         </div>
+       </div>
+     </nav>
 
-<section class="image">
-  <img src="image/accwebpage.png" alt="webpage1">
-  <img src="image/warmwebpage.png" alt="webpage2">
-  <img src="image/fruitone.png" alt="fruitposter1">
-  <img src="image/fruittwo.jpg" alt="fruitposter2">
-  <img src="image/mobile.png" alt="mobilecritique">
-  <img src="image/valatine.png" alt="valentinesday">
-  <img src="image/alphebatposter.jpg" alt="cosmetic">
+    </header>
+
+
+     <section class="graphic">
+       <h2>Vincent van Gogh's secret</h2>
+       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+         <ol class="carousel-indicators">
+           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+           <li data-target="#carouselExampleIndicators" data-slide-to="1" ></li>
+           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+           <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+           <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+           <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+           <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+           <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+         </ol>
+
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="image/8.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="image/1.jpg"  alt="Second slide">
+            </div>
+            <div class="carousel-item">
+               <img class="d-block w-100" src="image/2.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+               <img class="d-block w-100" src="image/3.jpg" alt="Fourth slide">
+            </div>
+            <div class="carousel-item">
+               <img class="d-block w-100" src="image/4.jpg" alt="5 slide">
+            </div>
+            <div class="carousel-item">
+               <img class="d-block w-100" src="image/5.jpg" alt="6 slide">
+            </div>
+            <div class="carousel-item">
+               <img class="d-block w-100" src="image/6.jpg" alt="7 slide">
+            </div>
+            <div class="carousel-item">
+               <img class="d-block w-100" src="image/7.jpg" alt="8 slide">
+            </div>
+         </div>
+
+         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+           <span class="carousel-control-prev-icon" ></span>
+           <span class="sr-only">Previous</span>
+         </a>
+         <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+           <span class="carousel-control-next-icon"></span>
+           <span class="sr-only">Next</span>
+         </a>
+
+        </div>
 </section>
 
+
     <footer>
-      <!-- The footer must be nicely styled and interesting.   I would expect a minimum of 6 properties styled. -->
       <div class='row'>
         <div class="col-sm-12 col-md-6" >
         <p id='contact'> Contact me</p>
-        <img src="image/phone.svg" alt='Phone' style="width:30px;height:30px;">
-        <img src="image/email.svg" alt='Email' style="width:30px;height:30px;">
-        <img src="image/linkedin.svg" alt='Linkedin' style="width:30px;height:30px;">
-        <img src="image/facebook.svg"alt='facebook' style="width:30px;height:30px;">
-        <img src='image/instagram.svg' alt='ins' style="width:30px;height:30px;"><br><br>
+        <img class="phone" src="image/phone.svg" alt='Phone' >
+        <img class="email" src="image/email.svg" alt='Email'>
+        <img class="link" src="image/linkedin.svg" alt='Linkedin' >
+        <img class="fb" src="image/facebook.svg" alt='facebook' >
+        <img class="ins" src='image/instagram.svg' alt='ins'><br><br>
        </div>
 
-       <div class="msg col-sm-12 col-md-6" >
-       <form action="mailto:zfp@umich.com" method="post" enctype="text/plain">
-         <p>Leave message:  </p>
-         <input type="text" name="comment" size="50">
-         <input type="submit" value="Send">
 
-         </form>
-        </div>
+      <div class="msg col-sm-12 col-md-6" >
+      <form action="mailto:zfp@umich.com" method="post" enctype="text/plain">
+        <p>Leave message  </p>
+        <input type="text" name="comment" size="50">
+        <input type="submit" value="Send">
+        </form>
+        <br>
+     </div>
 
-        <p> This site is created by Fanpan Zeng &copy;2018 ZFP</p>
+       <p> This site is created by Fanpan Zeng &copy;2018 ZFP</p>
 
-    </footer>
+     </div>
+   </footer>
 
-
-        </body>
-    </html>
+       </body>
+   </html>
