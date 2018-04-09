@@ -35,16 +35,18 @@ footer .msg p{
   font-weight: bold;
 }
 
+label{
+  color:white;
+  font-weight: bold;
+  margin:10px;
+}
+
 img.chcv{
   margin:20px;
-  height:50%;
-  width:50%;
   text-align: center;
 }
 img.encv{
   margin:20px;
-  height:50%;
-  width: :50%;
   text-align: center;
 }
 
@@ -175,7 +177,7 @@ img.d-block{
   width: 90%;
 
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .wrapper{
     display: none;
   }
