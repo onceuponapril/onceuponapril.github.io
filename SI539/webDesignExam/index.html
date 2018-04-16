@@ -1,16 +1,35 @@
 <html>
+<!DOCTYPE html>
 <head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript">
+
+	function hide(){
+   var x = document.getElementById("pic1");
+   var y = document.getElementById("pic2");
+       x.style.display = "none";
+       y.style.left = '30%'
+       // y.style.margin = "auto,0"
+  }
+  function show(){
+    var x = document.getElementById("pic1");
+    var y = document.getElementById("pic2");
+    x.style.display = "block";
+    y.style.left="0";
+  }
+  </script>
+
 </head>
 <body>
   <h1>Fanpan Zeng</h1>
-  <div class="pic">
-    <img id='pic1' src="images/examPic.JPG" alt="1">
-  <img id='pic2' src="images/UMSI-logo.jpg" alt="2">
+  <div class="pic row">
+    <img col-sm-6 id='pic1' src="images/examPic.JPG" alt="1">
+    <img col-sm-6 id='pic2' src="images/UMSI-logo.jpg" alt="2" style="position:relative;">
 </div>
 
-  <button type="button">Hide Image</button>
-  <button type="button">Show Image</button>
+  <button type="button" onclick='hide()'>Hide Image</button>
+  <button type="button" onclick='show()'>Show Image</button>
 </body>
 
 </html>
