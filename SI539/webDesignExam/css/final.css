@@ -1,0 +1,25 @@
+/* 3) Modify the image to have a blue 5px border and 5% padding.
+The entire image element should take up 50% of the screen.
+They aren't next to each other on Chrome though because of browser settings. */
+
+body{
+  background:url("images/sun-pattern.png");
+}
+
+div.pic{
+  size:50%;
+
+}
+div #pic1{
+
+  border:5px solid blue;
+  padding:5%;
+  width:50%;
+
+}
+div #pic2{
+  border:5px solid blue;
+  padding:5%;
+  width:50%;
+
+}
