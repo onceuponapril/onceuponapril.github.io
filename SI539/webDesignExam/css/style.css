@@ -1,0 +1,12 @@
+/* 3) Modify the image to have a blue 5px border and 5% padding.
+The entire image element should take up 50% of the screen.
+They aren't next to each other on Chrome though because of browser settings. */
+div.pic{
+  size:50%;
+}
+#img1{
+  border:5px blue;
+  padding:5%;
+  width:50%;
+
+}
