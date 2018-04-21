@@ -7,9 +7,10 @@
 </head>
 <body>
   <h1>Designer check: mgoblue.com </h1>
+  <div>
   <object width=100% height=100% data='final_project.pdf'>
 
   </object>
-  
+  </div>
 </body>
 </html>
